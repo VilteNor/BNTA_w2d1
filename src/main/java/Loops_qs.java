@@ -41,11 +41,11 @@ public class Loops_qs {
         // create a for loop which goes from 0 to 10, adding each value to an array
         // print our array
         Integer[] emptyNumbersArray=new Integer[11]; // initializing empty array which will hold 11 items (0-10)
-        ArrayList<Integer> numbers = new ArrayList<>(9); // empty arraylist
-        for(int i=0;i<=10;i+=2){
+        ArrayList<Integer> numbers = new ArrayList<>(); // empty arraylist
+        for(int i=0;i<=10;i++){
             numbers.add(i);
             emptyNumbersArray[i]=i;
-//            System.out.println("item in array: "+i);
+            System.out.println("item in array: "+i);
         }
         System.out.println("arraylist: "+numbers);
 
@@ -54,25 +54,21 @@ public class Loops_qs {
         // using your answer from Question 4, create a for loop that goes through the values
         // print each value individually
         // using arraylist:
-        for(int i=numbers.get(0);i< numbers.size();i++){
+        for(int i=0;i< numbers.size();i++){
             System.out.println("listarray item: "+i);
         }
 
-        // using array 'emptyNumbersArray' with an enhanced for loop
-
 
         // using array emptyNumbersArray with a classic for loop
-        for(int i=emptyNumbersArray[0];i< emptyNumbersArray.length;i++){
+        for(int i=0;i< emptyNumbersArray.length;i++){
             System.out.println("current i= "+i);
             System.out.println("array item: "+emptyNumbersArray[i]);
         }
 
-
-
-
-
-        
-
+        // using array 'emptyNumbersArray' with an enhanced for loop
+        for (int num:emptyNumbersArray){
+            System.out.println("enhanced loop: " +num);
+        }
 
 
 
